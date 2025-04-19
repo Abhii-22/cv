@@ -1,0 +1,39 @@
+<form action="create_cv.php" method="post" enctype="multipart/form-data">
+    <label class="form-label">Full Name:</label>
+    <input type="text" name="full_name" class="form-control" required>
+
+    <label class="form-label mt-2">Email:</label>
+    <input type="email" name="email" class="form-control" required>
+
+    <label class="form-label mt-2">Phone:</label>
+    <input type="text" name="phone" class="form-control" required>
+
+    <label class="form-label mt-2">Address:</label>
+    <textarea name="address" class="form-control"></textarea>
+
+    <label class="form-label mt-2">Profile Photo:</label>
+    <input type="file" name="profile_photo" class="form-control">
+
+    <label class="form-label mt-2">Professional Summary:</label>
+    <textarea name="summary" class="form-control"></textarea>
+
+    <label class="form-label mt-2">Skills:</label>
+    <textarea name="skills" class="form-control"></textarea>
+
+    <label class="form-label mt-2">Education:</label>
+    <textarea name="education" class="form-control"></textarea>
+
+    <label class="form-label mt-2">Work Experience:</label>
+    <textarea name="experience" class="form-control"></textarea>
+
+    <label class="form-label mt-2">Certifications:</label>
+    <textarea name="certifications" class="form-control"></textarea>
+
+    <label class="form-label mt-2">Select CV Template:</label>
+    <select name="template" class="form-control">
+        <option value="modern_template">Modern Template</option>
+        <option value="classic_template">Classic Template</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary mt-3">Generate CV</button>
+</form>
